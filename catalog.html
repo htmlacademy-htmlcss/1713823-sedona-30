@@ -8,9 +8,9 @@
   <header>
     <nav>
       <a href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"><br>
+        <img src="img/logo/logo.png" width="138" height="70" alt="Логотип Седоны"><br>
       </a>
-      <img src="img/backgroundphoto.png" width="1200" height="217" alt="Backgroundphoto">
+      <!--Декоративное<img src="img/backgroundphoto.png" width="1200" height="217" alt="Backgroundphoto">-->
       <ul>
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
@@ -60,15 +60,11 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <table>
-            <tr>
-              <td>от 0</td>
-              <td>до 3000</td>
-            </tr>
-          </table>
-          <input type="range" name="range line" min="0" max="3000">
+          <input type="number" name="min-price" id="filter-min-price" min="0" max="3000">
+          <input type="number" name="max-price" id="filter-max-price" min="0" max="3000">
+          <!--Слайдер-->
         </fieldset>
-        <input type="submit" value="Показать" name="show">
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section>
@@ -87,10 +83,14 @@
       </ul>
       <ul>
         <li>
-          <a>1</a>
+          <a>
+            <p>Просмотр результата поиска. Стрелка вверх</p>
+          </a>
         </li>
         <li>
-          <a href="blank.html">2</a>
+          <a href="blank.html">
+            <p>Просмотр результата поиска. Стрелка вниз</p>
+          </a>
           </li>
         </ul>
       </section>
@@ -102,21 +102,30 @@
             <img src="img/Layer21.png" width="135" height="90" alt="Amara Resort & Spa">
             <p>Гостиница От 4000 Р.
               Рейтинг: 8,5 
-              &#8727;	&#8727;	&#8727;	&#8727;	&#8727;</p>
-              <p>
+              <Span>*</Span>
+              <Span>*</Span>
+              <Span>*</Span>
+              <Span>*</Span>
+            </p>
+              <form action="blank.html" method="get">
                 <button type="button">Подробнее</button>
+              </form>
+              <form action="blank.html" method="get">
                 <button type="button">Забронировать</button>
-              </p>
+              </form>
             </li>
             <li>
               <h3>Desert Quail Inn</h3>
               <img src="img/Layer89copy.png" width="135" height="90" alt="Desert Quail Inn">
               <p>Мотель От 3000 Р.
                 Рейтинг: 8,9 
-                &#8727;	&#8727;	&#8727;</p>
+                <Span>*</Span>
+                <Span>*</Span>
+                <Span>*</Span>
+              </p>
                 <p>
-                  <button type="button">Подробнее</button>
-                  <button type="button">Забронировать</button>
+                  <a href="blank.html">Подробнее</a>
+                  <a href="blank.html">Забронировать</a>
                 </p>
               </li>
               <li>
@@ -124,7 +133,9 @@
                 <img src="img/Rectangle.png" width="135" height="90" alt="Villas at Poco Diablo">
                 <p>Апартаменты От 2000 Р.
                   Рейтинг: 9,2 
-                  &#8727;	&#8727;	</p>
+                  <Span>*</Span>
+                  <Span>*</Span>
+                </p>
                   <p>
                     <button type="button">Подробнее</button>
                     <button type="button">Забронировать</button>
@@ -160,7 +171,7 @@
               <p>
                 Website by
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
-                  <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+                  <img src="img/logo/logo-htmlacademy.svg" alt="Логотип HTML Academy">
                 </a>
               </p>
             </section>
